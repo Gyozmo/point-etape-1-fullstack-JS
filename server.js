@@ -2,9 +2,26 @@ var express = require('express');
 var app = express();
 var mysql = require('mysql');
 
+
 app.set('view engine', 'ejs');
 
+
+//API request
+// my key : AIzaSyAFB12dPTkhv2bS1mJiB5fPhNKx5oOTYR0
+
+var request = require('')
+
+
 //SQL
+
+/*  SERVER SQL
+Server: sql7.freemysqlhosting.net
+Name: sql7244511
+Username: sql7244511
+Password: wcUkbMcLNl
+Port number: 3306
+*/
+
 //connection parameters
 var con = mysql.createConnection({
     host: "sql7.freemysqlhosting.net",
@@ -69,10 +86,3 @@ app.listen(3000, function () {
 
 
 
-/*  SERVER SQL
-Server: sql7.freemysqlhosting.net
-Name: sql7244511
-Username: sql7244511
-Password: wcUkbMcLNl
-Port number: 3306
-*/
