@@ -1,0 +1,40 @@
+/*Global*/
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*nav*/
+
+nav {
+    height: 60px;
+}
+
+/*banner*/
+
+.banner {
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581__340.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0,0;
+    height: 400px;
+    width: 100%;
+}
+
+.banner h3 {
+    color: rgb(255, 245, 231);
+    font-size: 60px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.content {
+    margin: 5%;
+}
+
+.content h2 {
+    margin: 5%;
+}
+
