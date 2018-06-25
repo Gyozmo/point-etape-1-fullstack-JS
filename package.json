@@ -1,0 +1,27 @@
+{
+  "name": "fullstackjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gyozmo/point-etape-1-fullstack-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gyozmo/point-etape-1-fullstack-JS/issues"
+  },
+  "homepage": "https://github.com/Gyozmo/point-etape-1-fullstack-JS#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "firebase": "^5.1.0",
+    "jquery": "^3.3.1",
+    "mysql": "^2.15.0"
+  }
+}
