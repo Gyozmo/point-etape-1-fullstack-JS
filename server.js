@@ -44,7 +44,7 @@ var con = mysql.createConnection({
 //     })
 // })
 
-//INSERT CLIENT INTO DB
+            //INSERT CLIENT INTO DB
 function insertClient() {
 
     con.connect(function (err) {
@@ -76,10 +76,16 @@ function insertStorage() {
 
 
 
-
 //EXPRESS
+
+// app.use(express.static(path.join(__dirname + '.../public')))
+
 app.get('/', function (req, res) {
     res.render('index')
+})
+
+app.get('/livre', function (req,res){
+    res.render('livre')
 })
 
 app.listen(3000, function () {
