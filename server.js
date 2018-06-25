@@ -9,7 +9,9 @@ app.set('view engine', 'ejs');
 //API request
 // my key : AIzaSyAFB12dPTkhv2bS1mJiB5fPhNKx5oOTYR0
 
-var request = require('')
+// recherche avec clé
+//https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=AIzaSyAFB12dPTkhv2bS1mJiB5fPhNKx5oOTYR0
+
 
 
 //SQL
