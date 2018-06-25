@@ -88,9 +88,19 @@ app.get('/livre', function (req,res){
     res.render('livre')
 })
 
+app.get('/commande', function (req,res){
+    res.render('commande')
+})
+
+app.get('/emprunt', function (req,res){
+    res.render('emprunt')
+})
+
+
 app.listen(3000, function () {
     console.log('listening on 3000');
 })
+
 
 
 
