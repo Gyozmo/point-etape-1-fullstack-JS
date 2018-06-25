@@ -4,7 +4,7 @@ var mysql = require('mysql');
 
 app.set('view engine', 'ejs');
 
-        //SQL
+//SQL
 //connection parameters
 var con = mysql.createConnection({
     host: "sql7.freemysqlhosting.net",
@@ -13,7 +13,7 @@ var con = mysql.createConnection({
     database: "sql7244511"
 });
 
-            //CREATE TABLE
+//CREATE TABLE
 // con.connect(function(err){
 //     if (err) throw err;
 //     console.log('connected to DB');
@@ -21,35 +21,49 @@ var con = mysql.createConnection({
 //     con.query(sql, function(err, result){
 //         if(err) throw err;
 //         console.log('table created');
-        
+
 //     })
 // })
 
-            //INSERT CLIENT INTO DB
-function insertClient (){
+//INSERT CLIENT INTO DB
+function insertClient() {
 
-con.connect(function(err){
-    if (err) throw err;
-    console.log('connected');
-    var sql = "INSERT INTO client(login, password) VALUES ('Paul','paul')";
-    con.query(sql, function (err,result){
+    con.connect(function (err) {
         if (err) throw err;
-        console.log('client ajouter')
+        console.log('connected');
+        var sql = "INSERT INTO client(login, password) VALUES ('Paul','paul')";
+        con.query(sql, function (err, result) {
+            if (err) throw err;
+            console.log('client ajouter')
+        })
     })
-})
-    
+
 }
 
-insertClient()
+            //STORAGE ADD
+function insertStorage() {
+
+    con.connect(function (err) {
+        if (err) throw err;
+        console.log('connected');
+        var sql = "INSERT INTO storage (name, format, date, price, author) VALUES ('le seigneur des anneaux','DVD','2002-09-17','20','Peter Jackson')";
+        con.query(sql, function (err, result) {
+            if (err) throw err;
+            console.log('storage ajouter')
+        })
+    })
+}
+
+
 
 
 
 //EXPRESS
-app.get('/', function(req,res){
+app.get('/', function (req, res) {
     res.render('index')
 })
 
-app.listen(3000, function(){
+app.listen(3000, function () {
     console.log('listening on 3000');
 })
 
