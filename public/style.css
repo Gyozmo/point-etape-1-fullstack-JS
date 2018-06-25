@@ -18,8 +18,11 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0,0;
+    background-attachment: fixed;
     height: 400px;
     width: 100%;
+    position: relative;
+    top: -60px;
 }
 
 .banner h3 {
@@ -32,9 +35,31 @@ nav {
 
 .content {
     margin: 5%;
+    position: relative;
+    top: -60px;
 }
 
 .content h2 {
     margin: 5%;
 }
 
+h3 {
+    margin : 4%;
+}
+
+/*books*/
+.books{
+    display: flex;
+    justify-content: center;
+}
+.books img {
+    width: 150px;
+    height: 180px;
+}
+
+/*emprunt*/
+
+.empruntform {
+    display: flex;
+    align-content: center;
+}
