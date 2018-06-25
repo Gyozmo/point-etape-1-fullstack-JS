@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Gyozmo/point-etape-1-fullstack-JS#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "firebase": "^5.1.0",
