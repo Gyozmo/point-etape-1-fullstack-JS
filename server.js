@@ -9,20 +9,39 @@ app.set('view engine', 'ejs');
 var con = mysql.createConnection({
     host: "sql7.freemysqlhosting.net",
     user: "sql7244511",
-    password: "wcUkbMcLNl"
+    password: "wcUkbMcLNl",
+    database: "sql7244511"
 });
 
-//connection
+            //CREATE TABLE
+// con.connect(function(err){
+//     if (err) throw err;
+//     console.log('connected to DB');
+//     var sql = "CREATE TABLE customers (name VARCHAR(45))"
+//     con.query(sql, function(err, result){
+//         if(err) throw err;
+//         console.log('table created');
+        
+//     })
+// })
+
+            //INSERT CLIENT INTO DB
+function insertClient (){
+
 con.connect(function(err){
     if (err) throw err;
-    console.log("connected!")
+    console.log('connected');
+    var sql = "INSERT INTO client(login, password) VALUES ('Paul','paul')";
+    con.query(sql, function (err,result){
+        if (err) throw err;
+        console.log('client ajouter')
+    })
 })
+    
+}
 
-//create DB
-con.query("CREATE DATABASE mediateque", function(err, result){
-    if(err) throw err;
-    console.log("mediateque created");
-})
+insertClient()
+
 
 
 //EXPRESS
